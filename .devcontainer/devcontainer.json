@@ -1,7 +1,11 @@
 {
-  "name": "mimickn",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "remoteUser": "vscode"
+  "name": "ASDF Dev Container",
+  "image": "iloveitaly/asdf-devcontainer:0-ubuntu-22.04",
+  "postCreateCommand": "/asdf-post-create.sh",
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {
+      "version": "latest"
+    }
+  }
 }
