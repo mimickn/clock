@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.0.16",
+    "@fontsource/jost": "^5.0.16",
+    "@stylexjs/babel-plugin": "^0.3.0",
+    "@stylexjs/nextjs-plugin": "^0.3.0",
+    "@stylexjs/open-props": "^0.3.0",
     "@stylexjs/stylex": "^0.3.0",
     "dayjs": "^1.11.10",
     "next": "14.0.3",
