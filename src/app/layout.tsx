@@ -1,14 +1,14 @@
+import "@fontsource/inter/400.css"
+import "@fontsource/jost/400.css"
 import type { Metadata } from 'next'
-import { Inter, Jost } from 'next/font/google'
+import * as stylex from "@stylexjs/stylex";
 import './globals.css'
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ['latin'],
-});
-const JostFont = Jost({
-  variable: "--font-jost",
-  subsets: ["latin"],
+const styles = stylex.create({
+  body: {
+    fontFamily: "'Inter', 'sans-serif'",
+    fontWeight: 400,
+  },
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${JostFont.variable}`}>{children}</body>
+      <body {...stylex.props(styles.body)}>
+        {children}
+      </body>
     </html>
   )
 }
