@@ -1,5 +1,8 @@
 import "@fontsource/inter/400.css"
 import "@fontsource/jost/400.css"
+import '@fontsource/dseg7-modern-mini/400.css';
+import '@fontsource/dseg7-modern-mini/700.css';
+import '@fontsource-variable/orbitron';
 import type { Metadata } from 'next'
 import * as stylex from "@stylexjs/stylex";
 import './globals.css'

@@ -11,6 +11,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@fontsource-variable/orbitron": "^5.0.18",
+    "@fontsource/dseg7-modern-mini": "^5.0.7",
     "@fontsource/inter": "^5.0.16",
     "@fontsource/jost": "^5.0.16",
     "@stylexjs/babel-plugin": "^0.3.0",
