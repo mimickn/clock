@@ -5,7 +5,7 @@
   gap: 32px;
   padding: 6rem;
   min-height: 100vh;
-  background-color: #333;
+  background: linear-gradient(-45deg, #333333, #000000);
 }
 
 .description {
