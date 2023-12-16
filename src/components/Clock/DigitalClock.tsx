@@ -27,10 +27,13 @@ const styles = stylex.create({
     fontFamily: "'DSEG7 Modern Mini', 'sans-serif'",
     display: 'flex',
     alignItems: 'baseline',
-    justifyContent: 'space-between',
   },
   hourMinute: {
     fontSize: '40px',
+  },
+  amPm: {
+    fontFamily: "'Orbitron Variable', 'sans-serif'",
+    fontSize: '20px',
   },
   second: {
     fontSize: '20px',
@@ -69,7 +72,17 @@ export const DigitalClock: React.FC = () => {
               <div {...stylex.props(styles.hourMinute)}>
                 <span>{now.format('HH')}</span>:<span>{now.format('mm')}</span>
               </div>
-              <div>
+              <div style={{
+                position: 'relative',
+                top: '-29px',
+                left: '-2px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '6px',
+              }}>
+                <div {...stylex.props(styles.amPm)}>
+                  {now.format('a')}
+                </div>
                 <div {...stylex.props(styles.second)}>
                   {now.format('ss')}
                 </div>
