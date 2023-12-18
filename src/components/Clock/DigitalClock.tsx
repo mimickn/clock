@@ -49,8 +49,16 @@ export const DigitalClock: React.FC = () => {
   return (
     <div {...stylex.props(styles.container)}>
       {now === null
-        ? 'Loading...'
-        : (
+        ? (
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100%',
+          }}>
+            Loading...
+          </div>
+        ) : (
           <>
             <div {...stylex.props(styles.sub)}>
               <div style={{
